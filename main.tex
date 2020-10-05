@@ -26,9 +26,13 @@
 \begin{document}
 
 \maketitle
+\vspace{2cm}
+\includegraphics[scale=0.33]{Garlic.png}
 \thispagestyle{fancy}
 
+\newpage
 \tableofcontents
+\newpage
 
 \section{Purpose \\(Written by James Oswald)}
 \paragraph{}
@@ -119,6 +123,47 @@ This is a list of the remaining sprints that need to be accomplished and when:
 \end{enumerate}
 
 \section{Naming Conventions and Terms\\ (Written by James Oswald)}
+\paragraph{}
+Our project's vocabulary is mostly technical in nature, contains no acronyms and is entirely for the purpose of talking about implementation. The few non-technical terms we use are in relation to speeding up writing business requirements, and pieces of software used by our group.
+\subsection{Non-technical / Tool Glossary}
+\begin{itemize}
+    \item \textbf{User:} Anyone using the application.
+    \item \textbf{User Story ID:} A concise identifier for a user story.
+    \item \textbf{Expedia:} The website we scrape hotel data from.
+    \item \textbf{Overleaf/Latex:} Software used for formatting our internal documents. 
+    \item \textbf{Discord:} Communications Platform for VOIP and Messaging we use for internal communication and SCRUM Meetings.
+    
+\end{itemize}
+\subsection{Technical Glossary}
+\subsubsection{Frontend Glossary}
+\begin{itemize}
+    \item \textbf{Client:} The user's device. 
+    \item \textbf{Client Code:} Code that runs on the client. 
+    \item \textbf{Client Side:} Environment that runs client code, a web browser. 
+    \item \textbf{Fetch:} the JS Fetch API used frontend to communicate with the backend over HTTPS.
+    \item \textbf{Client Router:} React.js Router. 
+\end{itemize}
+\subsubsection{Backend Glossary}
+\begin{itemize}
+    \item \textbf{Server:} The hosting device. 
+    item \textbf{Server Code:} Code that runs on the server.
+    item \textbf{Server Side:} Environment that runs server code, node.js and python3 in a shell. 
+    \item \textbf{Server Router:} Express.js Routing.
+    \item \textbf{Endpoint Call:} A faux page requested by the fetch API and processed by express from the front end when making a server request. 
+    \item \textbf{Endpoint:} The actual method that runs server side when a request is made to preform an action from the client. 
+    \item \textbf{Listing:} The object that stores a hotel listing on the backend and is fully passed to the frontend when a search is made.
+\end{itemize}
+
+\subsubsection{Project Glossary}
+\begin{itemize}
+    \item \textbf{Setup:} The process to rebuild the project after new commits are made, named after the "Setup.bat" script in the project root that updates node packages and rebuilds the react frontend.
+    \item \textbf{Test DB:} The test database, setup on a separate server to test the application works with a real SQL database. 
+    \item \textbf{Cred File:} A special JSON file in the .gitignore that contains the database credentials. 
+    \item \textbf{Compound Debug:} VS code debugging both the frontend and backend simultaneously. 
+    \item \textbf{React Deletion:} When react compiles away a feature we wanted it to keep in the optimized build. 
+    \item \textbf{User Code:} (Not to be confused with client code) Any code that deals with User features, creation, settings, updating, etc. All contained in one file called "userCode.js".
+\end{itemize}
+
 
 \section{Relevant Facts and Assumptions\\ (Written by Nicholas Tymeson)}
 \paragraph{Assumptions}
